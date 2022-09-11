@@ -52,16 +52,17 @@ gem 'activeadmin'
 gem 'devise'
 gem 'csv-importer'
 
-group :development, :test do
+
+group :development do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 
-  gem 'pg'
+  
   gem 'spring'
  # gem 'spring-watcher-listen', '~> 2.0.0'
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console"
+  
   gem 'csv_importer'
   gem "sprockets-rails"
   gem 'sass-rails'
@@ -78,4 +79,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+end
+
+group :production do
+  gem 'pg'
+
 end

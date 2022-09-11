@@ -35,7 +35,7 @@ def update
 
 private
 def education_params
-    params.require(:education).permit(:marks :percentage )
+    params.require(:education).permit(:marks, :percentage )
   end
 
  def set_education
