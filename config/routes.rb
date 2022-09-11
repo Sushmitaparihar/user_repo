@@ -10,7 +10,5 @@ Rails.application.routes.draw do
 
   get "education/show", to: "api/v1/education#show"
 
-  get "home/index" , to: "api/v1/home#index"
-
 
 end
